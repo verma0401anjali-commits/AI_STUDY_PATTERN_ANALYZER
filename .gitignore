@@ -3,3 +3,5 @@ node_modules/
 client/dist/
 .claude/
 docs/
+*.log
+.DS_Store

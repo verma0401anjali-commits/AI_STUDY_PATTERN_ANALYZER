@@ -1,0 +1,66 @@
+{
+  "clusters": [
+    {
+      "id": 0,
+      "label": "Morning long-session studier",
+      "band": "High",
+      "center": [
+        5.11,
+        7.13,
+        2.12,
+        0.39
+      ],
+      "tip": "Keep up the long morning study sessions and the break cadence that's already working for you."
+    },
+    {
+      "id": 1,
+      "label": "Evening steady studier",
+      "band": "Medium",
+      "center": [
+        5.3,
+        6.37,
+        1.16,
+        1.74
+      ],
+      "tip": "Add one more break per session and try shifting your sleep earlier to boost productivity."
+    },
+    {
+      "id": 2,
+      "label": "Morning light-load high performer",
+      "band": "High",
+      "center": [
+        3.34,
+        7.67,
+        2.13,
+        0.26
+      ],
+      "tip": "Your efficient morning routine of good sleep and regular breaks is working well \u2014 keep it up."
+    },
+    {
+      "id": 3,
+      "label": "Night sleep-deprived studier",
+      "band": "Low",
+      "center": [
+        3.78,
+        4.66,
+        0.35,
+        2.94
+      ],
+      "tip": "Prioritize sleep and add regular breaks, and consider moving study sessions out of late night."
+    }
+  ],
+  "scaler": {
+    "mean": [
+      4.5117,
+      6.7233,
+      1.625,
+      1.0667
+    ],
+    "scale": [
+      1.1579,
+      1.1682,
+      0.9666,
+      1.0703
+    ]
+  }
+}

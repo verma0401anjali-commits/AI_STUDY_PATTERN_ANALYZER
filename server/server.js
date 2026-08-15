@@ -19,7 +19,7 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static(clientBuild));
 
   // All non-API routes → return index.html (SPA fallback)
-  app.get("*", (req, res) => {
+  app.get(/.*/, (req, res) => {
     res.sendFile(path.join(clientBuild, "index.html"));
   });
 }

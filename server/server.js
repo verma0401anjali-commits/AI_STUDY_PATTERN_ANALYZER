@@ -18,8 +18,9 @@ if (process.env.NODE_ENV === "production") {
   const clientBuild = path.join(__dirname, "..", "client", "dist");
   app.use(express.static(clientBuild));
 
-  // All non-API routes → return index.html (SPA fallback)
-  app.get(/.*/, (req, res) => {
+  // All non-API routes → return index.html (SPA fallback).
+  // Exclude /api/* so unmatched API calls 404 as JSON instead of HTML.
+  app.get(/^(?!\/api\/).*/, (req, res) => {
     res.sendFile(path.join(clientBuild, "index.html"));
   });
 }
